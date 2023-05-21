@@ -1,0 +1,106 @@
+// .slider{
+//     width: 80%;
+//     max-width: 1200px;
+//     margin: 100px auto 0;
+// }
+
+// .slider__el{
+//     position: absolute;
+//     top: 0;
+//     left: 0; 
+// }
+
+// .slider__list{
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+// /* .grid{
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//     grid-template-rows: repeat(4, 150px);
+//     gap: 2%;
+// } */
+
+// .slider__content{
+//     /* grid-column: 1 / span 3;
+//     grid-row: 2 / 4; */
+//     // background-color: #fff;
+//     padding: 10px;
+//     /* z-index: 10; */
+// }
+
+// .slider__img{
+//     /* grid-column: 3 / -1;
+//     grid-row: 1 / span 3; */
+//     align-self: center;
+//     max-width: 100%;
+// }
+
+// /*Controls*/
+// .slider__control{
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     position: relative;
+//     z-index: 10; 
+//     top: 180px;
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .slider__btn{
+//     /* grid-column: 6;
+//     grid-row: 4; */
+// }
+
+// .slider__btn--next{
+//     grid-row: 3;
+//     justify-self: center;
+//     align-self: flex-end;
+// }
+
+// .slider__btn button{
+//     border: none;
+//     background-color: blanchedalmond;
+//     cursor: pointer;
+//     color: coral;
+//     padding: 10px 20px 8px;
+//     font-weight: bold;
+//     text-transform: uppercase;
+// }
+
+// /*Anim*/
+
+// .slider__content{
+//     transform: translateX(50px);
+//     transition: all .3s ease-out;
+
+//     opacity: 0;
+//     pointer-events: none;
+//     visibility: hidden;
+// }
+
+// .slider__img{
+//     transform: translateX(50px);
+//     transition: all .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+
+//     opacity: 0;
+//     pointer-events: none;
+//     visibility: hidden;
+// }
+
+// .slider__el--show .slider__content{
+//     transform: translateX(0);
+//     opacity: 1;
+//     visibility: visible;
+//     pointer-events: all;
+// }
+
+// .slider__el--show .slider__img{
+//     transform: scale(1);
+//     opacity: 1;
+//     visibility: visible;
+//     pointer-events: all;
+// }
