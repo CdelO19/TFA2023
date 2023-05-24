@@ -1,0 +1,86 @@
+.hd{
+    height: 103px;
+    background-color: $c-black;
+}
+
+.hd--open{
+    height: 100vh;
+}
+
+.burgermenu{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-top: 40px
+}
+
+.burger{
+    display: grid;
+}
+
+.burger__el:first-child{
+    position: absolute;
+    top: 4px;
+}
+
+.burger--open{
+    position: relative;
+}
+
+.line{
+    width: 40px;
+    margin-bottom: 4px;
+}
+
+.line:last-child{
+    margin-bottom: 0px;
+}
+
+.line__open{
+    position: absolute;
+    rotate: 45deg;
+}
+
+.line__open--md{
+    rotate: -45deg;
+}
+
+.line__none{
+    display: none;
+}
+
+.menu{
+    display: none;
+    margin-top: 40px;
+}
+
+.menu--open{
+    display: block;
+}
+
+.menu__list{
+    list-style: none;
+    padding: 0;
+}
+
+.menu__el{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu__el:last-child{
+    margin-bottom: 0;
+}
+
+.menu__lien{
+    color: $c-bg;
+    text-decoration: none;
+}
+
+.menu__lien--actif{
+    color: $c-red;
+    font-weight: bold;
+}
