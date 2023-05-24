@@ -1,0 +1,32 @@
+.grid{
+    display: grid;
+    grid-template-columns: 76px 76px 76px;
+    column-gap: 30px;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.title{
+    grid-column: 1/4;
+}
+
+.title--sous{
+    grid-column: 1/4;
+}
+
+.fig{
+    grid-column: 1/4;
+    margin: 0;
+}
+
+p{
+    grid-column: 1/4;
+}
+
+.list{
+    grid-column: 1/4;
+}
+
+.listdev{
+    grid-column: 1/4;
+}

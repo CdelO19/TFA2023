@@ -2,13 +2,14 @@
 @import 'components/type';
 @import 'utils/slider';
 @import 'utils/header';
+@import 'utils/grille';
+@import 'utils/fond';
+@import 'components/img';
+@import 'utils/margin';
+@import 'components/list';
 
 img{
     width: 360px;
-}
-
-svg{
-    width: 20px;
 }
 
 body{
@@ -17,5 +18,5 @@ body{
 
 ul{
     margin: 0;
-    
+
 }
