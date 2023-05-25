@@ -32,12 +32,12 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__el">
-          <a href="index.html" class="menu__lien menu__lien--actif">Accueil</a>
+          <a href="index.html" class="menu__lien">Accueil</a>
         </li>
         <li class="menu__el"><a href="rencontres.html" class="menu__lien">Rencontres</a></li>
         <li class="menu__el"><a href="methodes.html" class="menu__lien">Méthodes</a></li>
         <li class="menu__el"><a href="hypotheses.html" class="menu__lien">Hypothèses</a></li>
-        <li class="menu__el"><a href="developpement.html" class="menu__lien">Developpement</a></li>
+        <li class="menu__el"><a href="developpement.html" class="menu__lien menu__lien--actif">Developpement</a></li>
         <li class="menu__el"><a href="presentation.html" class="menu__lien">Présentation</a></li>
         <li class="menu__el"><a href="adn.html" class="menu__lien">ADN</a></li>
       </ul>
@@ -45,32 +45,45 @@
   </header>
 
   <main class="mn">
-    <section class="sec">
-      <h1 class="title title--ps">Développement</h1>
-      <p>Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux : </p>
-      <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
+    <section class="sec margin__none">
+      <div class="grid">
+        <h1 class="title title--ps">Développement</h1>
+        <p>Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;: </p>
+      </div>
+      <figure class="fig__img">
+        <img src="assets/images/manif_violence.jpg" 
+          alt="image contre la violence"
+          srcset="assets/images/manif_violence.jpg 1x, assets/images/manif_violence@2x.jpg 2x">
+        <figcaption class="figc__img">Photo prise lors d'une manifestation contre la violence.</figcaption>
       </figure>
+      <div class="grid">
+        <p>Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;:</p>
+      </div>
 
       <ul class="bloc">
         <li class="bloc__el">
-          <h2 class="title title--ssbloc">Les filtres</h2>
-          <p>Comme premier module pour mon application, je souhaite mettre en place un système de filtre pour rechercher les informations d'aide.</p>
-          <h3 class="title title--sssbloc">Justification</h3>
-          <p>Utiliser des filtres pourraient faciliter la recherche des informations des utilisateurs, cela évitera de faire une recherche trop longue mais également d'avoir les informations les plus adéquates possibles.</p>
+          <div class="grid">
+            <h2 class="title title--ssps white margin__sous">Les filtres</h2>
+            <p>Comme premier module pour mon application, je souhaite mettre en place un système de filtre pour rechercher les informations d'aide.</p>
+            <h3 class="title title--sssps white">Justification</h3>
+            <p class="margin__bot">Utiliser des filtres pourraient faciliter la recherche des informations des utilisateurs, cela évitera de faire une recherche trop longue mais également d'avoir les informations les plus adéquates possibles.</p>
+          </div>
         </li>
         <li class="bloc__el">
-          <h2 class="title title--ssbloc">Les informations</h2>
-          <p>Mon deuxième module serait de séparer les informations en 2 catégories : les informations pour les victimes et les informations pour les personnes souhaitant aider une victime.</p>
-          <h3 class="title title--sssbloc">Justification</h3>
-          <p>Le fait de séparer les informations en 2 catégories permet de faire un premier tri. Les personnes victimes n'auront pas forcément les mêmes informations ni les mêmes besoins qu'une personne témoin ou qui souhaite aider quelqu'un.</p>
+          <div class="grid">
+            <h2 class="title title--ssps white margin__sous">Les informations</h2>
+            <p>Mon deuxième module serait de séparer les informations en 2 catégories : les informations pour les victimes et les informations pour les personnes souhaitant aider une victime.</p>
+            <h3 class="title title--sssps white">Justification</h3>
+            <p class="margin__bot">Le fait de séparer les informations en 2 catégories permet de faire un premier tri. Les personnes victimes n'auront pas forcément les mêmes informations ni les mêmes besoins qu'une personne témoin ou qui souhaite aider quelqu'un.</p>
+          </div>
         </li>
         <li class="bloc__el">
-          <h2 class="title title--ssbloc">Discussion</h2>
-          <p>Le troisième module consiste à créer une discussion avec une personne qualifiée. Comme une discussion messenger ou zoom.</p>
-          <h3 class="title title--sssbloc">Justification</h3>
-          <p>Proposer aux victimes de parler via message ou appel permet de les mettre à l'aise avec leur interlocuteur. En effet, certaines victimes préfèrent écrire, d'autres appeler. Si elle est obligée de faire l'un ou l'autre, cela peut mettre un frein à la communication.</p>
+          <div class="grid">
+            <h2 class="title title--ssps white margin__sous">Discussion</h2>
+            <p>Le troisième module consiste à créer une discussion avec une personne qualifiée. Comme une discussion messenger ou zoom.</p>
+            <h3 class="title title--sssps white">Justification</h3>
+            <p class="margin__bot">Proposer aux victimes de parler via message ou appel permet de les mettre à l'aise avec leur interlocuteur. En effet, certaines victimes préfèrent écrire, d'autres appeler. Si elle est obligée de faire l'un ou l'autre, cela peut mettre un frein à la communication.</p>
+          </div>
         </li>
       </ul>      
     </section>

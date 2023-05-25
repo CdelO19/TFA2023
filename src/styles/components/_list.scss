@@ -75,6 +75,22 @@
     list-style: inside;
 }
 
+.bloc{
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    margin-top: 60px;
+}
+
+.bloc__el{
+    background-color: $c-orange;
+    margin-bottom: 80px;
+    color: $c-bg;
+
+    h3{
+        margin-top: 20px;
+    }
+}
 
 
 
