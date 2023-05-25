@@ -1,0 +1,41 @@
+.ft{
+    margin-top: 80px;
+    background-color: $c-black;
+}
+
+.listft{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-left: 36px;
+}
+
+.listft__el{
+    color: $c-bg;
+    padding-top: 40px;
+
+    a{
+        color: $c-red;
+    }
+
+    svg{
+        width: 100px;
+    }
+
+    .st0{
+        fill: $c-bg;
+    }
+
+    .logo--cdelo{
+        width: 60px;
+    }
+}
+
+.listft--logo{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
