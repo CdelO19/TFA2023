@@ -92,5 +92,21 @@
     }
 }
 
+.tab{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tab__el{
+    background-color: $c-mauve;
+    color: $c-bg;
+    margin-bottom: 40px;
+
+    p{
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+}
 
 
