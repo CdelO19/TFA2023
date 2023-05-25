@@ -32,64 +32,88 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__el">
-          <a href="index.html" class="menu__lien menu__lien--actif">Accueil</a>
+          <a href="index.html" class="menu__lien">Accueil</a>
         </li>
         <li class="menu__el"><a href="rencontres.html" class="menu__lien">Rencontres</a></li>
         <li class="menu__el"><a href="methodes.html" class="menu__lien">Méthodes</a></li>
         <li class="menu__el"><a href="hypotheses.html" class="menu__lien">Hypothèses</a></li>
         <li class="menu__el"><a href="developpement.html" class="menu__lien">Developpement</a></li>
         <li class="menu__el"><a href="presentation.html" class="menu__lien">Présentation</a></li>
-        <li class="menu__el"><a href="adn.html" class="menu__lien">ADN</a></li>
+        <li class="menu__el"><a href="adn.html" class="menu__lien menu__lien--actif">ADN</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="mn">
-    <section class="sec">
-      <h1 class="title title--ps">ADN</h1>
-      <p>Trouver l'ADN de mon projet passe par différentes étapes : le <span class="bold">benchmark</span>, l'<span class="bold">audit</span>, … Je peux ainsi savoir où je me situe, trouver ce que je peux améliorer grâce à mon hypothèse. Trouver les problèmes de mes concurrents potentiels.</p>
+    <section class="sec margin__none">
+      <div class="grid">
+        <h1 class="title title--ps">ADN</h1>
+        <p class="margin__nonebot">Trouver l'ADN de mon projet passe par différentes étapes : le <span class="bold">benchmark</span>, l'<span class="bold">audit</span>, … Je peux ainsi savoir où je me situe, trouver ce que je peux améliorer grâce à mon hypothèse. Trouver les problèmes de mes concurrents potentiels.</p>
+      </div>
+    </section>
+
+    <section class="sec fond">
+      <div class="grid">
+        <h2 class="title title--ssps white">Audit</h2>
+        <p class="white">Cette étape a été très utile pour comprendre ce qui existait déjà et ainsi m'aider à comprendre ce que je pouvais apporter de nouveau ou non.</p>
+      </div>
     </section>
 
     <section class="sec">
-      <h2 class="title title--ssps">Audit</h2>
-      <p>Cette étape a été très utile pour comprendre ce qui existait déjà et ainsi m'aider à comprendre ce que je pouvais apporter de nouveau ou non.</p>
-    </section>
-
-    <section class="sec">
-      <h3 class="title title--sssps">Analyses</h3>
+      <div class="grid">
+        <h3 class="title title--sssps margin__none">Analyses</h3>
+      </div>
       <ul class="ana">
         <li class="ana__el">
-          <h4 class="title title--ssssps">App-Elles</h4>
-          <p>Sur cette application, il est possible de contacter les services d'urgences ou d'être redirigé vers des informations de contact + avertir 3 personnes de contact (géolocalisation + parler + enregistrer)</p>
-          <img src="" alt="logo App-Elles">
+          <div class="grid">
+            <h4 class="title title--ssssps white margin__sous">App-Elles</h4>
+            <img class="img__contenu" src="assets/images/logo_app-elles.jpg" 
+              alt="logo App-Elles"
+              srcset="assets/images/logo_app-elles.jpg 1x, assets/images/logo_app-elles@2x.jpg 2x">
+            <p class="margin__bot">Sur cette application, il est possible de contacter les services d'urgences ou d'être redirigé vers des informations de contact + avertir 3 personnes de contact (géolocalisation + parler + enregistrer)</p>
+          </div>
         </li>
         <li class="ana__el">
-          <h4 class="title title--ssssps">Sorority</h4>
-          <p>L'identité des utilisatrices est vérifiée avant de pouvoir utiliser l'application (réservée aux femmes). Bouton d'alarme pour prévenir 50 personnes les plus proches. Trouver des contacts des infos sur tous les sujets. Possibilité de trouver un foyer prêté par la communauté.</p>
-          <img src="" alt="Logo Sorority">
+          <div class="grid">
+            <h4 class="title title--ssssps white margin__sous">Sorority</h4>
+            <img class="img__contenu" src="assets/images/logo_thesorority.jpg" 
+              alt="Logo Sorority"
+              srcset="assets/images/logo_thesorority.jpg 1x assets/images/logo_thesorority@2x.jpg 2x">
+            <p class="margin__bot">L'identité des utilisatrices est vérifiée avant de pouvoir utiliser l'application (réservée aux femmes). Bouton d'alarme pour prévenir 50 personnes les plus proches. Trouver des contacts des infos sur tous les sujets. Possibilité de trouver un foyer prêté par la communauté.</p>
+          </div>
         </li>
         <li class="ana__el">
-          <h4 class="title title--ssssps">Street Alert-Sauver</h4>
-          <p>Propose à une victime de donner l'alerte. Choisir le type d'agression + bouton pour arrêter l'alerte. Envoie un signal aux utilisateurs de l'application pour venir en aide à la victime + bouton pour prévenir qu'on arrive.</p>
+          <div class="grid">
+            <h4 class="title title--ssssps white margin__sous">Street Alert-Sauver</h4>
+            <p class="margin__bot">Propose à une victime de donner l'alerte. Choisir le type d'agression + bouton pour arrêter l'alerte. Envoie un signal aux utilisateurs de l'application pour venir en aide à la victime + bouton pour prévenir qu'on arrive.</p>
+          </div>
         </li>
         <li class="ana__el">
-          <h4 class="title title--ssssps">Garde ton corps</h4>
-          <p>Possibilité d'envoyer une alerte à 3 personnes de confiance choisies. Avec géolocalisation de votre position pour ces personnes. Carte avec les commerces partenaires où vous pouvez trouver refuge.</p>
+          <div class="grid">
+            <h4 class="title title--ssssps white margin__sous">Garde ton corps</h4>
+            <p class="margin__bot">Possibilité d'envoyer une alerte à 3 personnes de confiance choisies. Avec géolocalisation de votre position pour ces personnes. Carte avec les commerces partenaires où vous pouvez trouver refuge.</p>
+          </div>
         </li>
         <li class="ana__el">
-          <h4 class="title title--ssssps">Sekura</h4>
-          <p>Bouton pour simuler un appel, alarme sonore, appeler numéro d'urgence, envoyer un message préenregistré à 3 contacts avec la géolocalisation</p>
+          <div class="grid">
+            <h4 class="title title--ssssps white margin__sous">Sekura</h4>
+            <p class="margin__bot">Bouton pour simuler un appel, alarme sonore, appeler numéro d'urgence, envoyer un message préenregistré à 3 contacts avec la géolocalisation</p>
+          </div>
         </li>
         <li class="ana__el">
-          <h4 class="title title--ssssps">Bodyguard</h4>
-          <p>Bloque les commentaires haineux avec une ia.</p>
+          <div class="grid">
+            <h4 class="title title--ssssps white margin__sous">Bodyguard</h4>
+            <p class="margin__bot">Bloque les commentaires haineux avec une ia.</p>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section class="sec">
-      <h3 class="title title--sssps">Justification de l'hypothèse</h3>
-      <p>Avec cet audit, on peut remarquer que ces applications sont principalement réservées aux femmes. Hors grâce aux interviews, j'ai pu m'apercevoir que les hommes peuvent également être victime de violences conjugales. Je remarque également que pour les informations, la victime est renvoyée vers un site où elle doit effectuer des recherches par la suite. En ce qui concerne les discussions, il n'y a pas de discussion avec une personne qualifiée, ce sont plutôt des discussions avec des personnes lambdas.</p>
+    <section class="sec fond">
+      <div class="grid">
+        <h3 class="title title--sssps white">Justification de l'hypothèse</h3>
+        <p class="white margin__bot">Avec cet audit, on peut remarquer que ces applications sont principalement réservées aux femmes. Hors grâce aux interviews, j'ai pu m'apercevoir que les hommes peuvent également être victime de violences conjugales. Je remarque également que pour les informations, la victime est renvoyée vers un site où elle doit effectuer des recherches par la suite. En ce qui concerne les discussions, il n'y a pas de discussion avec une personne qualifiée, ce sont plutôt des discussions avec des personnes lambdas.</p>
+      </div>
     </section>
   </main>
 
