@@ -33,3 +33,40 @@
     color: $c-red;
 }
 
+.accordeon{
+    grid-column: 1/4;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tableau{
+    grid-column: 1/4;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ques{
+    color: $c-orange;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+}
+
+.tableau__el:first-child{
+    margin-top: 20px;
+}
+
+.rep{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.6px;
+    margin-bottom: 40px;
+}
+.margin__nonebot{
+    margin-bottom: 0;
+}
+
+
+
