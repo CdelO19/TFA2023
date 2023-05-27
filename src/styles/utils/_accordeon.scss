@@ -1,0 +1,39 @@
+.accordeon__el{
+    border-top: solid 1px $c-mauve;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordeon__el:last-child{
+    border-bottom: solid 1px $c-mauve;
+}
+
+.accordeon__el summary{
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 700;
+
+    display: block;
+    grid-column: 1/4;
+}
+
+.accordeon__el p{
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 300;
+}
+
+.summlist{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+details[open]>summary>.summlist__el:last-child>svg>g>rect.plus {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
