@@ -21,15 +21,6 @@ btn.addEventListener('click', function(){
 });
 
 
-//accordeon
-const btnsumm = document.querySelector(".btnsumm");
-const moins = document.querySelector(".plus");
-
-btnsumm.addEventListener('click', function(){
-    moins.classList.toggle('moins');
-})
-
-
 //slider
 const btnPrev = document.querySelector(".slider__btn--prev");
 const btnNext = document.querySelector(".slider__btn--next");
