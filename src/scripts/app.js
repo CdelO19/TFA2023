@@ -20,7 +20,6 @@ btn.addEventListener('click', function(){
     hd.classList.toggle('hd--open');
 });
 
-
 //slider
 const btnPrev = document.querySelector(".slider__btn--prev");
 const btnNext = document.querySelector(".slider__btn--next");

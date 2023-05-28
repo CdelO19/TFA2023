@@ -33,7 +33,6 @@
     align-items: center;
 }
 
-details[open]>summary>.summlist__el:last-child>svg>g>rect.plus {
-    transform: rotate(90deg);
-    transition: transform 0.3s ease-in-out;
+details[open] .plus {
+   visibility: hidden;
 }
