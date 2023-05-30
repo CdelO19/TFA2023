@@ -30,3 +30,34 @@ p{
 .listdev{
     grid-column: 1/4;
 }
+
+@media (min-width : 481px) {
+    .grid{
+        grid-template-columns: 76px 76px 76px 76px;
+    }
+    
+    .title{
+        grid-column: 1/5;
+    }
+    
+    .title--sous{
+        grid-column: 1/5;
+    }
+    
+    .fig{
+        grid-column: 1/5;
+        margin: 0;
+    }
+    
+    p{
+        grid-column: 1/5;
+    }
+    
+    .list{
+        grid-column: 1/5;
+    }
+    
+    .listdev{
+        grid-column: 1/5;
+    }
+}
