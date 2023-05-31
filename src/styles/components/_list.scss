@@ -120,4 +120,8 @@
     color: $c-bg;
 }
 
-
+@media (min-width: 769px){
+    .list{
+        margin-top: 40px;
+    }
+}

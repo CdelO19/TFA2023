@@ -126,3 +126,70 @@ p{
 .bold{
   font-weight: 800;
 }
+
+.visible{
+  display: block;
+}
+
+.invisible{
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .one .grid{
+    position: absolute;
+    display: block;
+    background: #010101;
+    width: 50%;
+    padding-left: 36px;
+    padding-right: 36px;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .visible{
+    display: none;
+  }
+
+  .invisible{
+    display: block;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 25.2px;
+  }
+
+  .pgd{
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .ptp{
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+
+  .title--sous{
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .sec:nth-child(2), .sec:nth-child(5){
+
+    .grid{
+      margin-top: 0;
+    }
+    .title--sous{
+      margin-top: 0;
+    }
+  }
+
+  .sec:nth-child(5){
+    .grid{
+      .grid{
+        margin-left: 0;
+      }
+    }
+  }
+}

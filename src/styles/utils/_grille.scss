@@ -1,3 +1,7 @@
+.flex{
+    display: block;
+}
+
 .grid{
     display: grid;
     grid-template-columns: 76px 76px 76px;
@@ -31,33 +35,98 @@ p{
     grid-column: 1/4;
 }
 
+.sec:nth-child(3) .grid:last-child{
+    display: block;
+    margin-left: 0;
+}
+
 @media (min-width : 481px) {
     .grid{
         grid-template-columns: 76px 76px 76px 76px;
     }
-    
+
     .title{
         grid-column: 1/5;
     }
-    
+
     .title--sous{
         grid-column: 1/5;
     }
-    
+
     .fig{
         grid-column: 1/5;
         margin: 0;
     }
-    
+
     p{
         grid-column: 1/5;
     }
-    
+
     .list{
         grid-column: 1/5;
     }
-    
+
     .listdev{
         grid-column: 1/5;
     }
+}
+
+@media (min-width : 769px) {
+    .flex{
+        display: flex;
+
+        .grid{
+            display: block;
+        }
+
+        .grid:first-child{
+            margin-top: 40px;
+        }
+    }
+
+    .grid{
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .title--sous{
+        grid-column: 2/7;
+    }
+
+    p{
+        grid-column: 2/7;
+    }
+
+    .btn{
+        grid-column: 2/5;
+    }
+
+    .flex{
+        .grid{
+            margin-top: 0;
+        }
+    }
+
+    .sec:nth-child(2) .flex, .sec:nth-child(5) .flex{
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .grid{
+            margin-top: 0;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .sec:nth-child(3) .grid:last-child{
+        display: grid;
+        margin-left: 36px;
+    }
+
+    .sec:nth-child(4) .flex .grid{
+        margin-top: 0;
+        margin-right: 0;
+    }
+
 }

@@ -40,3 +40,19 @@
     margin-top: 40px;
     padding-bottom: 40px;
 }
+
+@media (min-width: 769px){
+    .ft{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 40px;
+    }
+
+    .listft:first-child{
+        margin-left: 0;
+    }
+
+    .listft:last-child .listft__el:last-child{
+        margin-left: 20px;
+    }
+}
