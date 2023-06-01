@@ -137,7 +137,6 @@ p{
 
 @media (min-width: 769px) {
   .one .grid{
-    position: absolute;
     display: block;
     background: #010101;
     width: 50%;
@@ -191,5 +190,22 @@ p{
         margin-left: 0;
       }
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .title{
+    font-size: 97px;
+    line-height: 172.2px;
+  }
+
+  .citation{
+    font-size: 23px;
+    line-height: 38px;
+  }
+
+  .title--sous{
+    font-size: 50px;
+    line-height: 70px;
   }
 }

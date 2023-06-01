@@ -84,6 +84,10 @@ p{
         }
     }
 
+    .row{
+        flex-direction: row-reverse;
+    }
+
     .grid{
         grid-template-columns: repeat(7, 1fr);
     }
@@ -129,4 +133,76 @@ p{
         margin-right: 0;
     }
 
+}
+
+@media (min-width: 1200px) {
+    .flex{
+        display: grid;
+        grid-template-columns: repeat(9, 100px);
+        gap: 38px;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    .one .flex{
+        display: flex;
+        margin: 0;
+    }
+
+    .dx .flex, .cq .flex{
+        .grid{
+            grid-column: 6/10;
+        }
+
+        .fig__img{
+            grid-column: 1/6;
+            grid-row: 1;
+        }
+    }
+
+    .tr{
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(9, 100px);
+            gap: 38px;
+            margin-left: 38px;
+            margin-right: 38px;
+        }
+
+        .title--sous{
+            grid-column: 3/8;
+        }
+
+        p{
+            grid-column: 3/8;
+        }
+
+        .btn{
+            grid-column: 3/6;
+        }
+    }
+
+    .qu .flex{
+        .grid{
+            grid-column: 2/6;
+        }
+
+        .list{
+            grid-column: 6/9;
+        }
+
+        .btn{
+            grid-column: 2/5;
+        }
+    }
+
+    .flex{
+        .six{
+            grid-column: 1/5;
+        }
+
+        .se{
+            grid-column: 6/10;
+        }
+    }
 }
