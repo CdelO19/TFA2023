@@ -68,6 +68,10 @@
     margin-bottom: 0;
 }
 
+.margin__nonebot--mod{
+    margin-bottom: 0;
+}
+
 .info{
     grid-column: 1/5;
     margin: 0;
@@ -123,5 +127,79 @@
 @media (min-width: 769px){
     .list{
         margin-top: 40px;
+    }
+
+    .tableau{
+        grid-column: 1/8;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 30px;
+    }
+
+    .tableau__el{
+        grid-column: 1/4;
+    }
+
+    .tableau__el:first-child{
+        margin-top: 0;
+    }
+
+    .tableau__el--grid{
+        grid-column: 5/8;
+    }
+
+    .info{
+        grid-column: 2/7;
+    }
+
+    .hyp{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 30px;
+
+        .list__el{
+            grid-column: 2/6;
+        }
+
+        .list__el:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .bloc{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 30px;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    .bloc__el{
+        grid-column: 1/5;
+        .grid{
+            display: block;
+        }
+        
+    }
+
+    .bloc__el:nth-child(2){
+        grid-column: 4/8;
+    }
+
+    .title--sstab{
+        grid-column: 2/5;
+    }
+
+    .ana__el{
+        .grid{
+            p{
+                grid-column: 2/6;
+                grid-row: 2;
+            }
+        }
+    }
+
+    .margin__nonebot--mod{
+        margin-bottom: 20px;
     }
 }

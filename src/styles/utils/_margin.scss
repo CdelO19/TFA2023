@@ -14,10 +14,19 @@
     margin-bottom: 40px;
 }
 
+.margin__lr{
+    margin: 0;
+}
+
 @media (min-width: 769px){
     .one{
         position: relative;
         display: flex;
+    }
+
+    .margin__lr{
+        margin-left: 38px;
+        margin-right: 38px;
     }
 }
 

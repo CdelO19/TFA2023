@@ -25,4 +25,26 @@ img{
     img{
         width: 60%;
     }
+
+    .img__contenu{
+        grid-column: 6/8;
+    }
+
+    .faceb{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .left{
+        img{
+            display: block;
+            margin-left: auto;
+        }
+
+        .figc__img{
+            text-align: end;
+        }
+    }
 }
+

@@ -84,3 +84,25 @@
     color: $c-red;
     font-weight: bold;
 }
+
+@media (min-width: 1200px){
+    .burgermenu{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        margin: 0;
+    }
+
+    .menu__list{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu__el{
+        margin-bottom: 0;
+        padding-top: 38px;
+        margin-right: 38px;
+    }
+}

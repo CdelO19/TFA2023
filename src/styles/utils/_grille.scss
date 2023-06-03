@@ -35,7 +35,7 @@ p{
     grid-column: 1/4;
 }
 
-.sec:nth-child(3) .grid:last-child{
+.tr .grid:last-child{
     display: block;
     margin-left: 0;
 }
@@ -110,6 +110,19 @@ p{
         }
     }
 
+    .flex--mod{
+        .grid{
+            display: block;
+            width: 70ch;
+        }
+
+        .fig__img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
     .sec:nth-child(2) .flex, .sec:nth-child(5) .flex{
         flex-direction: row-reverse;
         align-items: center;
@@ -123,7 +136,7 @@ p{
         }
     }
 
-    .sec:nth-child(3) .grid:last-child{
+    .tr .grid:last-child{
         display: grid;
         margin-left: 36px;
     }
@@ -131,6 +144,27 @@ p{
     .sec:nth-child(4) .flex .grid{
         margin-top: 0;
         margin-right: 0;
+    }
+
+    .title--ps{
+        grid-column: 2/7;
+      }
+
+    .title--ssps{
+        grid-column: 2/7;
+    }
+
+    .title--sssps{
+        grid-column: 2/7;
+    }
+
+    .p--grid{
+        grid-column: 2/6;
+        grid-row: 2;
+    }
+
+    .title--ssssps{
+        grid-column: 2/7;
     }
 
 }
