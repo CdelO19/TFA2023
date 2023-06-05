@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWMA project</title>
+  <title>ViolenceZero | Présentation</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -35,7 +35,6 @@
 
   <link rel="stylesheet" href="styles/app.css">
 
-  <script src="scripts/hammer.min.js" defer></script>
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
@@ -56,14 +55,14 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__el">
-          <a href="index.html" class="menu__lien">Accueil</a>
+          <a href="index.html" class="menu__lien js-anim">Accueil</a>
         </li>
-        <li class="menu__el"><a href="rencontres.html" class="menu__lien">Rencontres</a></li>
-        <li class="menu__el"><a href="methodes.html" class="menu__lien">Méthodes</a></li>
-        <li class="menu__el"><a href="hypotheses.html" class="menu__lien">Hypothèses</a></li>
-        <li class="menu__el"><a href="developpement.html" class="menu__lien">Développement</a></li>
-        <li class="menu__el"><a href="presentation.html" class="menu__lien menu__lien--actif">Présentation</a></li>
-        <li class="menu__el"><a href="adn.html" class="menu__lien">ADN</a></li>
+        <li class="menu__el"><a href="rencontres.html" class="menu__lien js-anim">Rencontres</a></li>
+        <li class="menu__el"><a href="methodes.html" class="menu__lien js-anim">Méthodes</a></li>
+        <li class="menu__el"><a href="hypotheses.html" class="menu__lien js-anim">Hypothèses</a></li>
+        <li class="menu__el"><a href="developpement.html" class="menu__lien js-anim">Développement</a></li>
+        <li class="menu__el"><a href="presentation.html" class="menu__lien menu__lien--actif js-anim">Présentation</a></li>
+        <li class="menu__el"><a href="adn.html" class="menu__lien js-anim">ADN</a></li>
       </ul>
     </nav>
   </header>
@@ -84,7 +83,7 @@
     </section>
 
     <section class="sec">
-      <div class="flex flex--mod">
+      <div class="flex flex--mod flex--modgrid">
         <div class="grid">
           <h2 class="title title--ssps margin__none margin__nonebot--mod">Présentation oral</h2>
           <p class="invisible">La présentation orale est une phase de travail très complexe. En effet, pour la présentation de ce travail, nous n'avons que 6 minutes pour convaincre le jury. C'est un temps très court pour présenter tout le contenu de ce travail. C'est pourquoi, nous utilisons différents outils qui permettent d'organiser nos idées et de présenter au mieux ce projet.</p>
@@ -112,19 +111,19 @@
 
     <section class="sec">
       <ul class="bloc">
-        <li class="bloc__el">
+        <li id="bloc-one" class="bloc__el">
           <div class="grid">
             <h4 class="title title--ssssps white margin__sous">Problème</h4>
             <p class="margin__bot">Cette première case consiste à décrire les problèmes rencontrés par les utilisateurs.</p>
           </div>
         </li>
-        <li class="bloc__el">
+        <li id="bloc-two" class="bloc__el">
           <div class="grid">
             <h4 class="title title--ssssps white margin__sous">Proposition de valeur unique</h4>
             <p class="margin__bot">Cette case est fortement liée avec la prochaine étape : l'audit. En effet, elle permet de savoir comment je vais me démarquer et ainsi d'appuyer mon hypothèse.</p>
           </div>
         </li>
-        <li class="bloc__el">
+        <li id="bloc-thr" class="bloc__el">
           <div class="grid">
             <h4 class="title title--ssssps white margin__sous">Solution</h4>
             <p class="margin__bot">La case solution, elle, me permet de noter ce que je propose comme solution aux problèmes des utilisateurs.</p>
@@ -139,7 +138,7 @@
         <p class="margin__bot">Après le Lean Canva, j'ai pu réaliser ce tableau. Son but est de m'aider à structurer mes idées pour mon pitch. Créer une ligne directrice. Je pourrai ensuite créer un support visuel en fonction.</p>
       </div>
 
-      <ul class="tab">
+      <ul class="tab scroll">
         <li class="tab__el">
           <div class="grid">
             <h5 class="title title--sstab">Cible</h5>

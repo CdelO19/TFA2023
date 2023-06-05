@@ -1,5 +1,54 @@
 "use strict";
 
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from("#bloc-one", {
+  scaleY: 0,
+  transformOrigin: "top left",
+  scrollTrigger:{
+    trigger: "#bloc-one",
+    start: "0% 50%",
+  } 
+});
+
+gsap.from("#bloc-two", {
+    scaleY: 0,
+    transformOrigin: "top left",
+    scrollTrigger:{
+      trigger: "#bloc-two",
+      start: "0% 50%",
+    } 
+  });
+
+  gsap.from("#bloc-thr", {
+    scaleY: 0,
+    transformOrigin: "top left",
+    scrollTrigger:{
+      trigger: "#bloc-thr",
+      start: "0% 50%",
+    } 
+  });
+
+//animation entre les pages
+const PageAnimations = document.querySelectorAll(".js-anim");
+
+PageAnimations.forEach(function(PageAnimation){
+    PageAnimation.addEventListener("click", function(e){
+
+        e.preventDefault();
+        let newLocation = this.href;
+        
+        document.body.classList.add("page-animation");
+        document.body.addEventListener("animationend", function(){
+            window.location = newLocation;
+        });
+    })
+});
+ 
+
 //burger menu
 
 const btn = document.querySelector('.burgermenu');

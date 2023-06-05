@@ -173,7 +173,7 @@ p{
     .flex{
         display: grid;
         grid-template-columns: repeat(9, 100px);
-        gap: 38px;
+        column-gap: 38px;
         margin-left: 38px;
         margin-right: 38px;
     }
@@ -198,7 +198,7 @@ p{
         .grid{
             display: grid;
             grid-template-columns: repeat(9, 100px);
-            gap: 38px;
+            column-gap: 38px;
             margin-left: 38px;
             margin-right: 38px;
         }
@@ -238,5 +238,97 @@ p{
         .se{
             grid-column: 6/10;
         }
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(9, 100px);
+        column-gap: 38px;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    .title--ps{
+        grid-column: 2/6;
+      }
+
+    .title--ssps{
+        grid-column: 2/6;
+    }
+
+    .title--sssps{
+        grid-column: 2/6;
+    }
+
+    .p--grid{
+        grid-column: 2/6;
+        grid-row: 2;
+    }
+
+    .title--ssssps{
+        grid-column: 2/6;
+    }
+
+    p{
+        grid-column: 2/6;
+    }
+
+    .grid{
+        .white{
+            grid-column: 3/7;
+        }
+
+        .img__contenu{
+            grid-column: 7/9;
+            grid-row: 2;
+        }
+    }
+
+    .flex--mod{
+        display: block;
+        margin: 0;
+    }
+
+    .flex--mod .grid{
+        display: grid;
+        grid-template-columns: repeat(9, 100px);
+        column-gap: 38px;
+        margin-left: 38px;
+        margin-right: 38px;
+
+        .title--ssps{
+            grid-column: 2/5;
+        }
+
+        .invisible{
+            grid-column: 2/5;
+        }
+
+        .fig__img{
+            grid-column: 5/10;
+        }
+    }
+
+    .flex--modgrid{
+        display: grid;
+        grid-template-columns: repeat(9, 100px);
+        column-gap: 38px;
+        margin-left: 38px;
+        margin-right: 38px;
+
+        .invisible{
+            grid-column: 2/5;
+        }
+
+        .fig__img{
+            grid-column: 6/10;
+        }
+
+        .grid{
+            display: block;
+            grid-column: 1/6;
+            width: auto;
+        }
+
     }
 }

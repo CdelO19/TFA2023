@@ -15,6 +15,14 @@ img{
     margin-bottom: 20px;
 }
 
+.img__visible{
+    display: block;
+  }
+  
+  .img__invisible{
+    display: none;
+  }
+
 @media (min-width: 769px){
     .one img{
         display: block;
@@ -46,5 +54,20 @@ img{
             text-align: end;
         }
     }
+}
+
+@media (min-width: 1200px) {
+    .faceb{
+        width: 600px;
+    }
+
+    .img__visible{
+        display: none;
+      }
+      
+      .img__invisible{
+        display: block;
+        margin-top: 0;
+      }
 }
 

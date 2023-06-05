@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWMA project</title>
+  <title>ViolenceZero | Méthodes</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -34,14 +34,14 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__el">
-          <a href="index.html" class="menu__lien">Accueil</a>
+          <a href="index.html" class="menu__lien js-anim">Accueil</a>
         </li>
-        <li class="menu__el"><a href="rencontres.html" class="menu__lien">Rencontres</a></li>
-        <li class="menu__el"><a href="methodes.html" class="menu__lien menu__lien--actif">Méthodes</a></li>
-        <li class="menu__el"><a href="hypotheses.html" class="menu__lien">Hypothèses</a></li>
-        <li class="menu__el"><a href="developpement.html" class="menu__lien">Développement</a></li>
-        <li class="menu__el"><a href="presentation.html" class="menu__lien">Présentation</a></li>
-        <li class="menu__el"><a href="adn.html" class="menu__lien">ADN</a></li>
+        <li class="menu__el"><a href="rencontres.html" class="menu__lien js-anim">Rencontres</a></li>
+        <li class="menu__el"><a href="methodes.html" class="menu__lien menu__lien--actif js-anim">Méthodes</a></li>
+        <li class="menu__el"><a href="hypotheses.html" class="menu__lien js-anim">Hypothèses</a></li>
+        <li class="menu__el"><a href="developpement.html" class="menu__lien js-anim">Développement</a></li>
+        <li class="menu__el"><a href="presentation.html" class="menu__lien js-anim">Présentation</a></li>
+        <li class="menu__el"><a href="adn.html" class="menu__lien js-anim">ADN</a></li>
       </ul>
     </nav>
   </header>
@@ -57,13 +57,20 @@
     <section class="sec">
       <div class="flex flex--mod">
         <div class="grid">
-          <h2 class="title title--ssps margin__none margin__nonebot">Les interviews</h2>
+          <h2 class="title title--ssps margin__none margin__nonebot visible">Les interviews</h2>
           <div class="invisible">
+            <h2 class="title title--ssps margin__none margin__nonebot">Les interviews</h2>
             <p>L'interview est une méthode simple permettant de mieux comprendre le sujet traité ainsi que la condition de vie des victimes, avant, pendant et après les violences subies.</p>
             <button class="btn"><a href="rencontres.html">Mes interviews</a></button>
           </div>
+          <figure class="fig__img img__invisible">
+            <img src="assets/images/interview.jpg" 
+              alt="deux femmes qui discutent"
+              srcset="assets/images/interview.jpg 1x, assets/images/interview@2x.jpg 2x">
+            <figcaption class="figc__img">Deux personnes discutant.</figcaption>
+          </figure>
         </div>
-        <figure class="fig__img">
+        <figure class="fig__img img__visible">
           <img src="assets/images/interview.jpg" 
             alt="deux femmes qui discutent"
             srcset="assets/images/interview.jpg 1x, assets/images/interview@2x.jpg 2x">

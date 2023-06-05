@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWMA project</title>
+  <title>ViolenceZero | Développement</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -12,7 +12,6 @@
 
   <link rel="stylesheet" href="styles/app.css">
 
-  <script src="scripts/hammer.min.js" defer></script>
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
@@ -33,14 +32,14 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__el">
-          <a href="index.html" class="menu__lien">Accueil</a>
+          <a href="index.html" class="menu__lien js-anim">Accueil</a>
         </li>
-        <li class="menu__el"><a href="rencontres.html" class="menu__lien">Rencontres</a></li>
-        <li class="menu__el"><a href="methodes.html" class="menu__lien">Méthodes</a></li>
-        <li class="menu__el"><a href="hypotheses.html" class="menu__lien">Hypothèses</a></li>
-        <li class="menu__el"><a href="developpement.html" class="menu__lien menu__lien--actif">Développement</a></li>
-        <li class="menu__el"><a href="presentation.html" class="menu__lien">Présentation</a></li>
-        <li class="menu__el"><a href="adn.html" class="menu__lien">ADN</a></li>
+        <li class="menu__el"><a href="rencontres.html" class="menu__lien js-anim">Rencontres</a></li>
+        <li class="menu__el"><a href="methodes.html" class="menu__lien js-anim">Méthodes</a></li>
+        <li class="menu__el"><a href="hypotheses.html" class="menu__lien js-anim">Hypothèses</a></li>
+        <li class="menu__el"><a href="developpement.html" class="menu__lien menu__lien--actif js-anim">Développement</a></li>
+        <li class="menu__el"><a href="presentation.html" class="menu__lien js-anim">Présentation</a></li>
+        <li class="menu__el"><a href="adn.html" class="menu__lien js-anim">ADN</a></li>
       </ul>
     </nav>
   </header>
@@ -51,7 +50,7 @@
         <h1 class="title title--ps">Développement</h1>
         <p class="visible">Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;: </p>
       </div>
-      <div class="flex margin__lr flex--mod">
+      <div class="flex margin__lr flex--mod flex--modgrid">
         <p class="invisible">Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;:</p>
         <figure class="fig__img left">
           <img src="assets/images/manif_violence.jpg" 
@@ -62,7 +61,7 @@
       </div>
 
       <ul class="bloc">
-        <li class="bloc__el">
+        <li id="bloc-one" class="bloc__el">
           <div class="grid">
             <h2 class="title title--ssps white margin__sous">Les filtres</h2>
             <p>Comme premier module pour mon application, je souhaite mettre en place un système de filtre pour rechercher les informations d'aide.</p>
@@ -70,7 +69,7 @@
             <p class="margin__bot">Utiliser des filtres pourraient faciliter la recherche des informations des utilisateurs, cela évitera de faire une recherche trop longue mais également d'avoir les informations les plus adéquates possibles.</p>
           </div>
         </li>
-        <li class="bloc__el">
+        <li id="bloc-two" class="bloc__el">
           <div class="grid">
             <h2 class="title title--ssps white margin__sous">Les informations</h2>
             <p>Mon deuxième module serait de séparer les informations en 2 catégories : les informations pour les victimes et les informations pour les personnes souhaitant aider une victime.</p>
@@ -78,7 +77,7 @@
             <p class="margin__bot">Le fait de séparer les informations en 2 catégories permet de faire un premier tri. Les personnes victimes n'auront pas forcément les mêmes informations ni les mêmes besoins qu'une personne témoin ou qui souhaite aider quelqu'un.</p>
           </div>
         </li>
-        <li class="bloc__el">
+        <li id="bloc-thr" class="bloc__el">
           <div class="grid">
             <h2 class="title title--ssps white margin__sous">Discussion</h2>
             <p>Le troisième module consiste à créer une discussion avec une personne qualifiée. Comme une discussion messenger ou zoom.</p>
