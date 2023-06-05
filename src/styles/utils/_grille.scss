@@ -40,6 +40,14 @@ p{
     margin-left: 0;
 }
 
+.tr{
+    padding-bottom: 40px;
+}
+
+.se{
+    padding-bottom: 40px;
+}
+
 @media (min-width : 481px) {
     .grid{
         grid-template-columns: 76px 76px 76px 76px;
@@ -176,6 +184,7 @@ p{
         column-gap: 38px;
         margin-left: 38px;
         margin-right: 38px;
+        justify-content: center;
     }
 
     .one .flex{
@@ -183,9 +192,15 @@ p{
         margin: 0;
     }
 
+    .one .grid{
+        padding-left: 80px;
+    }
+
     .dx .flex, .cq .flex{
+        align-items: start;
         .grid{
             grid-column: 6/10;
+            
         }
 
         .fig__img{
@@ -201,6 +216,7 @@ p{
             column-gap: 38px;
             margin-left: 38px;
             margin-right: 38px;
+            justify-content: center;
         }
 
         .title--sous{
@@ -237,6 +253,7 @@ p{
 
         .se{
             grid-column: 6/10;
+            padding-bottom: 50px;
         }
     }
 
@@ -246,6 +263,7 @@ p{
         column-gap: 38px;
         margin-left: 38px;
         margin-right: 38px;
+        justify-content: center;
     }
 
     .title--ps{
@@ -285,7 +303,7 @@ p{
     }
 
     .flex--mod{
-        display: block;
+        
         margin: 0;
     }
 
@@ -295,6 +313,7 @@ p{
         column-gap: 38px;
         margin-left: 38px;
         margin-right: 38px;
+        justify-content: center;
 
         .title--ssps{
             grid-column: 2/5;
@@ -315,6 +334,7 @@ p{
         column-gap: 38px;
         margin-left: 38px;
         margin-right: 38px;
+        justify-content: center;
 
         .invisible{
             grid-column: 2/5;

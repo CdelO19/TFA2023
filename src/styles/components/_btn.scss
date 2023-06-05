@@ -11,21 +11,16 @@
     margin-left: 36px;
 
     background-color: $c-mauve;
-    
-    a{
-        font-family: 'Be Vietnam Pro', sans-serif;
-        color: $c-bg;
-        text-decoration: none;
-    }
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: $c-bg;
+    text-decoration: none;
+    width: fit-content;
 }
 
 .orange{
     background-color: $c-orange;
     margin-bottom: 40px;
-    
-    a{
-        color: $c-text;
-    }
 }
 
 @media (min-width: 769px){

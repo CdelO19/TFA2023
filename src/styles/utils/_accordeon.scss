@@ -42,6 +42,10 @@ details[open] svg{
     transition: .5s ease-in-out;
 }
 
+details[open] p{
+    transition: .5s ease-in;
+}
+
 details svg{
     transition: .5s ease-in-out;
 }
@@ -66,7 +70,7 @@ details svg{
         p{
             width: 70ch;
             display: block;
-            margin-left: 138px;
+            margin-left: 385px;
         }
     }
 
@@ -74,8 +78,9 @@ details svg{
         display: grid;
         grid-template-columns: repeat(9, 100px);
         column-gap: 38px;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 38px;
+        margin-right: 38px;
+        justify-content: center;
     }
 
     .summlist__el:first-child{

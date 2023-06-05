@@ -208,6 +208,7 @@ p{
   }
 
   .citation{
+    width: 50ch;
     font-size: 23px;
     line-height: 38px;
   }
@@ -220,11 +221,13 @@ p{
   .title--ps{
     font-size: 70px;
     line-height: 106.4px;
+    margin-bottom: 20px;
   }
 
   .title--ssps{
     font-size: 60px;
-    line-height: 84px;
+    line-height: 75px;
+    margin-bottom: 20px;
   }
 
   .title--sssps{
