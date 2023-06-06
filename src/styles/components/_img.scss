@@ -23,6 +23,16 @@ img{
     display: none;
   }
 
+.faceb{
+    grid-column: 1/4;
+}
+
+@media (min-width: 481px) {
+    .faceb{
+        grid-column: 1/5;
+    }
+}
+
 @media (min-width: 769px){
     .one img{
         display: block;
@@ -39,9 +49,7 @@ img{
     }
 
     .faceb{
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
+        grid-column: 2/7;
     }
 
     .left{
@@ -59,6 +67,7 @@ img{
 @media (min-width: 1200px) {
     .faceb{
         width: 600px;
+        grid-column: 3/7;
     }
 
     .img__visible{
