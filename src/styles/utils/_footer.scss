@@ -11,6 +11,18 @@
     margin-left: 36px;
 }
 
+.listftflex{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 36px;
+
+    .listft__el:first-child{
+        margin-right: 36px;
+    }
+}
+
 .listft__el{
     color: $c-bg;
     padding-top: 40px;
@@ -46,6 +58,10 @@
         display: flex;
         justify-content: space-around;
         padding-bottom: 40px;
+    }
+
+    .listftflex{
+        margin-left: 0;
     }
 
     .listft:first-child{
