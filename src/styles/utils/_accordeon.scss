@@ -30,13 +30,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.summlist__el{
-    font-weight: 700;
-    margin: 0;
-    font-size: 16px;
-    line-height: 22.4px;
+    .summlist__el{
+        font-weight: 700;
+        margin: 0;
+        font-size: 16px;
+        line-height: 22.4px;
+    }
 }
 
 details{
@@ -50,30 +50,18 @@ details[open] svg{
 
 details p{
     transform: scaleY(0);
-    transition: .5s ease-in;
+    transition: all .5s ease-in;
     transform-origin: top center;
 }
 
 details[open] p{
     transform: scaleY(1);
-    transition: .5s ease-in;
+    transition: all .5s ease-in;
 }
 
 details svg{
     transition: .5s ease-in-out;
 }
-
-// details[open] .plus {
-//    transform: rotate(90deg);
-//    transition: .5s ease-in-out;
-//    transform-origin: center center;
-// }
-
-// details .plus {
-//     transform: rotate(0deg);
-//     transition: .5s ease-in-out;
-//     transform-origin: center center;
-//  }
 
 @media (min-width:1200px) {
     .accordeon__el .grid{
@@ -94,20 +82,20 @@ details svg{
         margin-left: 38px;
         margin-right: 38px;
         justify-content: center;
-    }
 
-    .summlist__el{
-        font-weight: 700;
-        margin: 0;
-    }
-
-    .summlist__el:first-child{
-        grid-column: 2/7;
-    }
-
-    .summlist__el:last-child{
-        grid-column: 8/9;
-        display: block;
-        margin-left: auto;
+        .summlist__el{
+            font-weight: 700;
+            margin: 0;
+        }
+    
+        .summlist__el:first-child{
+            grid-column: 2/7;
+        }
+    
+        .summlist__el:last-child{
+            grid-column: 8/9;
+            display: block;
+            margin-left: auto;
+        }
     }
 }

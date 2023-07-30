@@ -141,7 +141,7 @@ iframe{
 
     .sec:nth-child(2) .flex, .sec:nth-child(5) .flex{
         flex-direction: row-reverse;
-        align-items: center;
+        align-items: top;
 
         .grid{
             margin-top: 0;
@@ -307,6 +307,10 @@ iframe{
     .grid{
         .white{
             grid-column: 3/7;
+        }
+
+        .grid--mod{
+            grid-column: 2/7;
         }
 
         .img__contenu{

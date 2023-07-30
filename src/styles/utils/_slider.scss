@@ -7,7 +7,7 @@
 .slider__el{
     display: table-column;
     transform: translateX(50px);
-    transition: all .4s ease-out;
+    transition: all 1s ease-out;
 
     opacity: 0;
     pointer-events: none;
@@ -127,58 +127,6 @@
     height: 50px;
 }
 
-.femme--un{
-    fill: $c-mauve;
-    fill-opacity: 60%;
-}
-
-.femme--tr{
-    fill: $c-mauve;
-    fill-opacity: 50%;
-}
-
-.femme--qu{
-    fill: $c-mauve;
-    fill-opacity: 50%;
-}
-
-.femme--cq{
-    fill: $c-mauve;
-    fill-opacity: 75%;
-}
-
-.femme--si{
-    fill: $c-mauve;
-    fill-opacity: 66%;
-}
-
-.femme--se{
-    fill: $c-mauve;
-}
-
-.femme--hu{
-    fill: $c-mauve;
-}
-
-.femme--ne{
-    fill: $c-mauve;
-}
-
-.femme--di{
-    fill: $c-mauve;
-    fill-opacity: 75%;
-}
-
-.femme--on{
-    fill: $c-mauve;
-    fill-opacity: 50%;
-}
-
-.femme--do{
-    fill: $c-mauve;
-    fill-opacity: 50%;
-}
-
 .homme{
     fill: none;
     stroke: $c-mauve;
@@ -189,51 +137,28 @@
     height: 60px;
 }
 
-.homme--un{
+.femme--un{
     fill: $c-mauve;
+    fill-opacity: 60%;
 }
 
-.homme--tr{
-    fill: $c-mauve;
-    fill-opacity: 50%;
-}
-
-.homme--qu{
+.femme--tr, .femme--qu, .femme--on, .femme--do, .homme--tr, .homme--qu, .homme--on, .homme--do{
     fill: $c-mauve;
     fill-opacity: 50%;
 }
 
-.homme--cq{
+.femme--cq, .homme--cq, .homme--di{
     fill: $c-mauve;
     fill-opacity: 75%;
 }
 
-.homme--si{
+.femme--si, .homme--si{
     fill: $c-mauve;
     fill-opacity: 66%;
 }
 
-.homme--hu{
+.femme--se, .femme--hu, .femme--ne, .femme--di, .homme--un, .homme--hu, .homme--ne{
     fill: $c-mauve;
-}
-
-.homme--ne{
-    fill: $c-mauve;
-}
-
-.homme--di{
-    fill: $c-mauve;
-    fill-opacity: 75%;
-}
-
-.homme--on{
-    fill: $c-mauve;
-    fill-opacity: 50%;
-}
-
-.homme--do{
-    fill: $c-mauve;
-    fill-opacity: 50%;
 }
 
 .rondlist{
@@ -245,14 +170,14 @@
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
-}
 
-.rondlist__el{
-    margin-right: 5px;
-}
-
-.rondlist__el:last-child{
-    margin-right: 0;
+    .rondlist__el{
+        margin-right: 5px;
+    }
+    
+    .rondlist__el:last-child{
+        margin-right: 0;
+    }
 }
 
 .rond{

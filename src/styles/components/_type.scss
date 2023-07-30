@@ -18,14 +18,14 @@ body {
 }
 
 .title--ps{
-  color: $c-red;
+  color: $c-violet;
   font-size: 36px;
   line-height: 50.4px;
   margin-top: 40px;
 }
 
 .title--sous{
-  color: $c-text;
+  color: $c-violet;
   font-size: 28px;
   line-height: 39.2px;
   font-weight: 400;
@@ -36,13 +36,13 @@ body {
 .title--ssps{
   font-size: 32px;
   line-height: 44.8px;
-  color: $c-text;
+  color: $c-violet;
 }
 
 .title--sssps{
   font-size: 28px;
   line-height: 39.2px;
-  color: $c-text;
+  color: $c-violet;
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@ body {
 .title--ssssps{
   font-size: 24px;
   line-height: 33.6px;
-  color: $c-text;
+  color: $c-violet;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -58,10 +58,6 @@ body {
 .title--sstab{
   font-size: 20px;
   line-height: 28px;
-}
-
-.red{
-  color: $c-red;
 }
 
 .white{
@@ -83,8 +79,12 @@ body {
 }
 
 .lien{
-  color: $c-red;
+  color: $c-bg;
   font-weight: bold;
+}
+
+.lien--white{
+  color: $c-bg;
 }
 
 p{
@@ -98,6 +98,7 @@ p{
   font-weight: 700;
   line-height: 32.2px;
   margin-bottom: 20px;
+  color: $c-mauve;
 }
 
 .pgd{
@@ -138,7 +139,7 @@ p{
 @media (min-width: 769px) {
   .one .grid{
     display: block;
-    background: #010101;
+    
     width: 50%;
     padding-left: 36px;
     padding-right: 36px;
@@ -180,7 +181,6 @@ p{
   }
 
   .sec:nth-child(2), .sec:nth-child(5){
-
     .grid{
       margin-top: 0;
     }
@@ -196,26 +196,24 @@ p{
       }
     }
   }
-
-
-  
 }
 
 @media (min-width: 1200px) {
   .title{
     font-size: 97px;
     line-height: 172.2px;
+    margin-top: 40px;
   }
 
   .citation{
-    width: 50ch;
+    width: 45ch;
     font-size: 23px;
     line-height: 38px;
   }
 
   .title--sous{
     font-size: 50px;
-    line-height: 70px;
+    line-height: 62px;
   }
 
   .title--ps{

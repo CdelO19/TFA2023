@@ -11,7 +11,7 @@ PageAnimations.forEach(function(PageAnimation){
 
         e.preventDefault();
         let newLocation = this.href;
-        
+
         document.body.classList.add("page-animation");
         document.body.addEventListener("animationend", function(){
             window.location = newLocation;
@@ -22,9 +22,9 @@ PageAnimations.forEach(function(PageAnimation){
 
 
 if (window.location.href.includes('methodes.html')) {
-    
+
     //slider
-    
+
     const btnPrev = document.querySelector(".slider__btn--prev");
     const btnNext = document.querySelector(".slider__btn--next");
     btnNext.addEventListener("click", next);
@@ -97,70 +97,105 @@ if (window.location.href.includes('methodes.html')) {
 }
 
 if (window.location.href.includes('developpement.html')) {
-   
+
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.from("#bloc-one", {
-    scaleY: 0,
+    x: -800,
     transformOrigin: "top left",
     scrollTrigger:{
         trigger: "#bloc-one",
         start: "0% 50%",
-    } 
+    }
     });
 
     gsap.from("#bloc-two", {
-        scaleY: 0,
+        x: 1000,
         transformOrigin: "top left",
         scrollTrigger:{
         trigger: "#bloc-two",
         start: "0% 50%",
-        } 
+        }
     });
 
     gsap.from("#bloc-thr", {
-        scaleY: 0,
+        x: -800,
         transformOrigin: "top left",
         scrollTrigger:{
         trigger: "#bloc-thr",
         start: "0% 50%",
-        } 
+        }
     });
 
 }
 
 if (window.location.href.includes('presentation.html')) {
-    
+
 
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.from("#bloc-one", {
-    scaleY: 0,
-    transformOrigin: "top left",
-    scrollTrigger:{
-        trigger: "#bloc-one",
-        start: "0% 50%",
-    } 
-    });
-
-    gsap.from("#bloc-two", {
-        scaleY: 0,
+        x: -800,
         transformOrigin: "top left",
         scrollTrigger:{
-        trigger: "#bloc-two",
-        start: "0% 50%",
-        } 
+            trigger: "#bloc-one",
+            start: "0% 50%",
+        }
+        });
+
+        gsap.from("#bloc-two", {
+            x: 1000,
+            transformOrigin: "top left",
+            scrollTrigger:{
+            trigger: "#bloc-two",
+            start: "0% 50%",
+            }
+        });
+
+        gsap.from("#bloc-thr", {
+            x: -800,
+            transformOrigin: "top left",
+            scrollTrigger:{
+            trigger: "#bloc-thr",
+            start: "0% 50%",
+            }
+        });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let panels = gsap.utils.toArray(".panel");
+    let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+
+    panels.forEach((panel, i) => {
+    ScrollTrigger.create({
+        trigger: panel,
+        start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
+        pin: true,
+        pinSpacing: false
+    });
     });
 
-    gsap.from("#bloc-thr", {
-        scaleY: 0,
-        transformOrigin: "top left",
-        scrollTrigger:{
-        trigger: "#bloc-thr",
-        start: "0% 50%",
-        } 
+    
+}
+
+if (window.location.href.includes('adn.html')) {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let panels = gsap.utils.toArray(".panel");
+    
+    let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+
+    panels.forEach((panel, i) => {
+    ScrollTrigger.create({
+        trigger: panel,
+        start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
+        pin: true,
+        pinSpacing: false
+    });
     });
 
+    
 }
 
 

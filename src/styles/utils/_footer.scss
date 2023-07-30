@@ -1,6 +1,6 @@
 .ft{
     margin-top: 80px;
-    background-color: $c-black;
+    background-color: $c-mauve;
 }
 
 .listft{
@@ -29,7 +29,8 @@
     font-size: 18px;
 
     a{
-        color: $c-red;
+        color: $c-bg;
+        font-weight: bold;
     }
 
     svg{

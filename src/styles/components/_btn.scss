@@ -5,12 +5,12 @@
     padding-right: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border: none;
+    border: solid 2px $c-red;
     border-radius: 4px;
 
     margin-left: 36px;
 
-    background-color: $c-mauve;
+    background-color: $c-red;
 
     font-family: 'Be Vietnam Pro', sans-serif;
     color: $c-bg;
@@ -18,8 +18,12 @@
     width: fit-content;
 }
 
+.btn:hover{
+    background-color: $c-bg;
+    color: $c-red;
+}
+
 .orange{
-    background-color: $c-orange;
     margin-bottom: 40px;
 }
 
