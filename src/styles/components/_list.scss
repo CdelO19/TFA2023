@@ -123,12 +123,13 @@
         font-size: 14px;
         line-height: 19.6px;
     }
+}
 
-    .tab__elbloc{
-        background-color: $c-mauve;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+.tab__elbloc{
+    background-color: $c-mauve;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-column: 1/-1;
 }
 
 .ana{
