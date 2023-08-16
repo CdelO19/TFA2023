@@ -5,13 +5,14 @@
 }
 
 .accordeon__el:last-child{
-    border-bottom: solid 1px $c-mauve;
+    border-bottom: solid 1px $c-mauve3;
 }
 
 .accordeon__el summary{
     font-size: 16px;
     line-height: 22.4px;
     font-weight: 700;
+    color: $c-mauve;
 
     grid-column: 1/4;
 }
@@ -20,6 +21,11 @@
     font-size: 16px;
     line-height: 22.4px;
     font-weight: 300;
+}
+
+.accordeon__el .bold{
+    font-weight: 800;
+    color: $c-red;
 }
 
 .summlist{

@@ -55,11 +55,14 @@ img{
     .left{
         img{
             display: block;
+            width: 60%;
             margin-left: auto;
+            margin-top: 40px;
+            margin-right: auto;
         }
 
         .figc__img{
-            text-align: end;
+            text-align: center;
         }
     }
 }

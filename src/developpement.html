@@ -70,12 +70,21 @@
 
   <main class="mn">
     <section class="sec margin__none">
-      <div class="grid">
+      <div id="visible" class="grid visible">
         <h1 class="title title--ps">Développement</h1>
-        <p class="visible">Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;: </p>
+        <p>Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;:</p>
       </div>
-      <div class="flex margin__lr flex--mod flex--modgrid">
-        <p class="invisible">Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;:</p>
+      <figure class="fig__img left visible">
+        <img src="assets/images/manif_violence.jpg" 
+          alt="image contre la violence"
+          srcset="assets/images/manif_violence.jpg 1x, assets/images/manif_violence@2x.jpg 2x">
+        <figcaption class="figc__img">Photo prise lors d'une manifestation contre la violence.</figcaption>
+      </figure>
+      <div id="invisible" class="flex">
+        <div class="margin__left">
+          <h1 class="title title--ps">Développement</h1>
+          <p>Les hypothèses choisies, je peux déjà réfléchir aux différentes fonctions que pourrait avoir mon application. Je vais utiliser trois modules principaux&nbsp;:</p>
+        </div>
         <figure class="fig__img left">
           <img src="assets/images/manif_violence.jpg" 
             alt="image contre la violence"
@@ -83,21 +92,26 @@
           <figcaption class="figc__img">Photo prise lors d'une manifestation contre la violence.</figcaption>
         </figure>
       </div>
+      
 
       <ul class="bloc">
         <li id="bloc-one" class="bloc__el">
           <div class="grid">
-            <h2 class="title title--ssps white margin__sous">Les filtres</h2>
+            <h2 class="title title--ssps white margin__sous">Filtres</h2>
             <p>Comme premier module pour mon application, je souhaite mettre en place un système de filtre pour rechercher les informations d'aide.</p>
-            <h3 class="title title--sssps white">Justification</h3>
-            <p class="margin__bot">Utiliser des filtres pourraient faciliter la recherche des informations des utilisateurs, cela évitera de faire une recherche trop longue mais également d'avoir les informations les plus adéquates possibles.</p>
           </div>
+          <div class="grid">
+            <h3 class="title title--sssps">Justification</h3>
+            <p class="margin__bot">Utiliser des filtres pourraient faciliter la recherche des informations des utilisateurs, cela évitera de faire une recherche trop longue mais également d'avoir les informations les plus adéquates possibles.</p>
+          </div>          
         </li>
         <li id="bloc-two" class="bloc__el">
-          <div class="grid">
-            <h2 class="title title--ssps white margin__sous">Les informations</h2>
+          <div id="grid--color" class="grid">
+            <h2 class="title title--ssps white margin__sous">Informations</h2>
             <p>Mon deuxième module serait de séparer les informations en 2 catégories : les informations pour les victimes et les informations pour les personnes souhaitant aider une victime.</p>
-            <h3 class="title title--sssps white">Justification</h3>
+          </div>
+          <div class="grid">
+            <h3 class="title title--sssps">Justification</h3>
             <p class="margin__bot">Le fait de séparer les informations en 2 catégories permet de faire un premier tri. Les personnes victimes n'auront pas forcément les mêmes informations ni les mêmes besoins qu'une personne témoin ou qui souhaite aider quelqu'un.</p>
           </div>
         </li>
@@ -105,6 +119,8 @@
           <div class="grid">
             <h2 class="title title--ssps white margin__sous">Discussion</h2>
             <p>Le troisième module consiste à créer une discussion avec une personne qualifiée. Comme une discussion messenger ou zoom.</p>
+            </div>
+            <div class="grid">
             <h3 class="title title--sssps white">Justification</h3>
             <p class="margin__bot">Proposer aux victimes de parler via message ou appel permet de les mettre à l'aise avec leur interlocuteur. En effet, certaines victimes préfèrent écrire, d'autres appeler. Si elle est obligée de faire l'un ou l'autre, cela peut mettre un frein à la communication.</p>
           </div>

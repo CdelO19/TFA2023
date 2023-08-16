@@ -96,38 +96,38 @@ if (window.location.href.includes('methodes.html')) {
     };
 }
 
-if (window.location.href.includes('developpement.html')) {
+// if (window.location.href.includes('developpement.html')) {
 
-    gsap.registerPlugin(ScrollTrigger);
+//     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from("#bloc-one", {
-    x: -800,
-    transformOrigin: "top left",
-    scrollTrigger:{
-        trigger: "#bloc-one",
-        start: "0% 50%",
-    }
-    });
+//     gsap.from("#bloc-one", {
+//     x: -800,
+//     transformOrigin: "top left",
+//     scrollTrigger:{
+//         trigger: "#bloc-one",
+//         start: "0% 50%",
+//     }
+//     });
 
-    gsap.from("#bloc-two", {
-        x: 1000,
-        transformOrigin: "top left",
-        scrollTrigger:{
-        trigger: "#bloc-two",
-        start: "0% 50%",
-        }
-    });
+//     gsap.from("#bloc-two", {
+//         x: 1000,
+//         transformOrigin: "top left",
+//         scrollTrigger:{
+//         trigger: "#bloc-two",
+//         start: "0% 50%",
+//         }
+//     });
 
-    gsap.from("#bloc-thr", {
-        x: -800,
-        transformOrigin: "top left",
-        scrollTrigger:{
-        trigger: "#bloc-thr",
-        start: "0% 50%",
-        }
-    });
+//     gsap.from("#bloc-thr", {
+//         x: -800,
+//         transformOrigin: "top left",
+//         scrollTrigger:{
+//         trigger: "#bloc-thr",
+//         start: "0% 50%",
+//         }
+//     });
 
-}
+// }
 
 if (window.location.href.includes('presentation.html')) {
 

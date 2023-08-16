@@ -2,6 +2,12 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .slider__el{
@@ -12,6 +18,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    width: 0;
 }
 
 .slider__list{
@@ -41,8 +48,6 @@
 
 .slider__btn--next{
     grid-row: 3;
-    justify-self: center;
-    align-self: flex-end;
 }
 
 .slider__btn button{
@@ -80,6 +85,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+    width: auto;
 }
 
 .slider__el--show .slider__content{
@@ -194,6 +200,12 @@
 
 .margin__leftnone{
     margin-left: 0;
+}
+
+@media (min-width : 769px) {
+    .slider__content{
+        width: 50ch;
+    }
 }
 
 @media (min-width: 1200px) {

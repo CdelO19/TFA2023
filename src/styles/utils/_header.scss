@@ -81,6 +81,7 @@
 .menu__lien--actif{
     color: $c-red;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 @media (min-width: 1200px){
@@ -106,8 +107,7 @@
             margin-right: 38px;
     
             a:hover{
-                color: $c-violet;
-                text-decoration: underline;
+                color: $c-red;
             }
         }
     }   
